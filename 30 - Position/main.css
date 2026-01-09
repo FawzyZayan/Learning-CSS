@@ -1,0 +1,83 @@
+/* 
+  Position
+  - Static => Default       If I tried to move it with margin, it will not move
+  - Relative                The element will move without affecting other elements
+  - Absolute                The element will get out of the workflow and the element after it will get to its place and the element which has the  position: absolute; will move in his parent affecting other elements exept if I gave it certain positions to move in
+  - Fixed                   The elment will move in his parent and will be moving with me if I scroll
+  - Sticky
+*/
+
+body {
+  min-height: 5000px;
+}
+
+div {
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+
+.one_static {
+  background-color: red;
+  position: static;
+  margin: 1000;
+}
+
+.two_static {
+  background-color: green;
+}
+
+.one_relative {
+  background-color: red;
+  position: relative;
+  top: 33px;
+  left: 5px;
+}
+
+.two_relative {
+  background-color: green;
+}
+
+.one_absolute {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.parent {
+  width: 500px;
+  height: 300px;
+  background-color: blue;
+  position: relative;
+}
+
+.two_absolute {
+  background-color: green;
+}
+
+.one_fixed {
+  background-color: red;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+.parent2{
+  width: 500px;
+  height: 300px;
+  background-color: blue;
+  position: relative;
+}
+
+.two_fixed {
+  background-color: green;
+}
+
+.sticky {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 15px;
+}
