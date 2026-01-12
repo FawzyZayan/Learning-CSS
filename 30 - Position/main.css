@@ -1,10 +1,16 @@
 /* 
   Position
   - Static => Default       If I tried to move it with margin, it will not move
+
   - Relative                The element will move without affecting other elements
-  - Absolute                The element will get out of the workflow and the element after it will get to its place and the element which has the  position: absolute; will move in his parent affecting other elements exept if I gave it certain positions to move in
+
+  - Absolute                The element will get out of the workflow and the element after it will get
+                            to its place and the element which has the  position: absolute; will move in 
+                            his parent affecting other elements exept if I gave it certain positions to move in
   - Fixed                   The elment will move in his parent and will be moving with me if I scroll
-  - Sticky
+
+  - Sticky.                 If there are many p and there us a search at the top, you say at where px to begin scrollong with
+                            in a sticky way and the elements after it will get behind it
 */
 
 body {
