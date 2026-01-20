@@ -1,0 +1,12 @@
+ul {
+  list-style: symbols inside;
+}
+
+li {
+  background-color: #EEE;
+  margin-bottom: 10px;
+}
+
+.special li {
+  list-style: circle inside;
+}
