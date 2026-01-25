@@ -1,0 +1,21 @@
+body {
+  font-family: 'Robobto', sans-serif;
+}
+
+table {
+  width: 100%;
+  border: 2px solid #d8d8d8;
+  border-spacing: 5px;
+}
+
+table td {
+  padding: 15px;
+  background-color: #EEE;
+}
+
+table thead td {
+  background-color: #CCC;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
