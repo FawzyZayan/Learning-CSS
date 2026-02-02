@@ -1,0 +1,32 @@
+.one span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.two::first-letter {
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.three::first-line {
+  font-weight: bold;
+  color: green;
+}
+
+/* If I zoomed in or out the color and the weight will move and be on the first line */
+
+.four {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+.four::selection {
+  background-color: darkgoldenrod;
+  font-weight: bolder;
+}
