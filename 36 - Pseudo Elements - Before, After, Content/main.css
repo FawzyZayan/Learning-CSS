@@ -1,0 +1,61 @@
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.one {
+  background-color: #EEE;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+.one::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: white;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #009688 transparent transparent;
+}
+
+
+.one::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #009688;
+}
+
+.user {
+  background-color: #EEE;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+.one .pipeline {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #009688;
+}
