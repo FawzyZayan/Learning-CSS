@@ -1,0 +1,40 @@
+/* 
+
+  Vendor Prefixes
+
+  Chrome
+  Safari
+  Firefox
+  IE, Edge
+  Opera
+
+
+  [1] Anew CSS feature apeared
+  [2] Browsers test the feature in Version X
+  [3] Browsers add Prefix to give developers the Ability to use it
+  [4] The feature is fully supported in version Y, No need for Prefix
+
+
+  -webkit- => Chrome, Safari and New Opera Versions
+  -moz- => Firefox
+  -ms- => IE and Edge
+  -o- Old Opera Versions
+
+*/
+
+.class {
+  /* -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px; 
+  I can use these elements but I don't want to because they are supported in all versions due to this website: https://caniuse.com/?search=border-radius*/
+  border-radius: 10px;
+}
+
+/* 
+
+  [1] Most of Users use Modern Versions
+  [2] VS Code Addon to add the Prefix
+  [3] Task Runner
+
+*/
