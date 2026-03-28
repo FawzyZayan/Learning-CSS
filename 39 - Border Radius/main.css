@@ -1,0 +1,17 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Now we have a square. If I want to make it a circle I should make the border-radius half the width and the height or type in it border-radius: 50%; . Also, to make it, the first thing is that the width and the height must be the same.*/
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 20px auto;
+  border-radius: 50%;
+}
