@@ -1,0 +1,16 @@
+.parent {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #DDD;
+}
+
+.one {
+  background-color: #EEE;
+  width: 300px;
+  float: left;
+  padding: 10px;
+  border: 10px solid red;
+  box-sizing: content-box;
+}
