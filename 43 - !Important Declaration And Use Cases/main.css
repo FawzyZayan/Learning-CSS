@@ -1,0 +1,9 @@
+/* The !imortant Declaration */
+
+.one {
+  background-color: blue !important;
+}
+
+.two {
+  background-color: brown;
+}
