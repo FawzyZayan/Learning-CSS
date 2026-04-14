@@ -1,0 +1,41 @@
+/*  CSS Variables 
+    - Global Variable
+    - Local variable
+    var(Variable Name, Fallback Value)
+*/
+
+:root {
+  --mainColor: green;
+  --mainPadding: 10px;
+}
+
+.main {
+  background-color: var(--mainColor, black);
+  color: white;
+  padding: calc(10px + var(--mainPadding));
+}
+
+h2 {
+  color: var(--mainColor, black);
+  background-color: #EEE;
+  padding: calc(10px + var(--mainPadding));
+}
+
+p {
+  color: var(--mainColor, black);
+  border: 2px solid var(--mainColor, black);
+  padding: calc(10px + var(--mainPadding));
+}
+
+a:hover {
+  color: var(--mainColor, black);
+}
+
+.local {
+  --localColor: blue;
+  --localTextColor: white;
+  --localPadding: 20px;
+  background-color: var(--localColor, red);
+  color: var(--localTextColor, whitesmoke);
+  padding: var(--localPadding, 15px);
+}
