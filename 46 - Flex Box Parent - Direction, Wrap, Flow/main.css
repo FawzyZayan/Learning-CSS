@@ -1,0 +1,50 @@
+/*  Flexible Box
+    For Parent
+    - display: flex => To Start Flexible Box
+    - flex-direction: row => Default Value | Put the Elements in the form of a Row
+    - flex-direction: row-reverse => Reverse the Order of the Elements in the Form of a Row
+    - flex-direction: column => Put the Elements in the form of a Column
+    - flex-direction: column-reverse => Reverse the Order of the Elements in the Form of a Column
+    - flex-wrap: nowrap => Default Value | Doesn't Make the Elements Go Down each others if the Width is not Sutable for the Elements
+    - flex-wrap: wrap => Make the Elements Go Down each others if the Width is not Sutable for the Elements
+    - flex-wrap: wrap-reverse => Make the Elements Go Down each others if the Width is not Sutable for the Elements but the Elemnts which went down get up and the Elements in the top come down
+    - flex-flow: flex-direction, flex-wrap => Allow you to type thw flex-direction and the flex-wrap in it (The Shorthand for flex-direction and flex- wrap) You Must type the flex-direction first then type flex-wrap
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  flex-flow: row wrap;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #F00;
+  color: white;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
