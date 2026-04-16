@@ -1,0 +1,49 @@
+/*  Flexible Box
+    For Parent
+    - justify-content: flex-start => Default Value | Make the Elements are Showen from The Right to the Left and down the Elements are Showen from the Right to the Left too
+    - justify-content: flex-end => Make the Elements are Showen from The Left to the Right and down the Elements are Showen from the left to the Right too
+    - justify-content: center => Make the Elements are Showen from The Right to the Left and down the Elements are Showen from the Center (Like text-align: center;)
+    - justify-content: space-between => If you want to make spaces between your elements, you will make the Width in the Elements like this width: calc({The Number you Want}% / {The Number of Elements}); and make justify-content: space-between;
+    - justify-content: space-around => If you want to make spaces around your elements, you will make the Width in the Elements like this width: calc({The Number you Want}% / {The Number of Elements}); and make justify-content: space-around;
+    - justify-content: space-evenly => If you want to make spaces around and between your elements, you will make the Width in the Elements like this width: calc({The Number you Want}% / {The Number of Elements}); and make justify-content: space-evenly; 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  justify-content: space-evenly;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: calc(90% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #F00;
+  color: white;
+  float: left;
+  width: calc(94% / 3);
+  text-align: center;
+  padding: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
