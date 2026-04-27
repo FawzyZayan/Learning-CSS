@@ -1,0 +1,71 @@
+/*  Flexible Box
+    For Parent
+    - align-items: stretch => Default Value | Make the Elements Stretch to Fit the Content
+    - align-items: flex-start => Make the Elements at the Start of the Start of the Flex but Longitudinally
+    - align-items: flex-end => Make the Elements Go Down
+    - align-items: center => Make the Elements in the Center
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  align-items: stretch;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #EEE;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #F00;
+  color: white;
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.flex .one {
+  height: 80px;
+}
+
+.flex .two {
+  height: 120px;
+}
+
+.float .one {
+  height: 80px;
+}
+
+.float .two {
+  height: 120px;
+}
+
+.center {
+  background-color: blue;
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
