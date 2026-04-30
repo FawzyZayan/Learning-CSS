@@ -1,0 +1,28 @@
+/*  Flexible Box
+    For Child
+    - flex-grow: 0 => Default Value | Doesn't make the Elements Grow to Fill the Place they are In
+    - flex-grow: 1 => Make the Elements Grow to Fill the Place they are In Equally
+    - flex-shrink: 1 => Default Value | Make the Element Shrink First when other Elements begin to Shrink
+    - order: {Any Number} => Make the Elements to go to the Place you Wrote
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+}
