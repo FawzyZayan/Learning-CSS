@@ -1,0 +1,30 @@
+/*  Flexible Box
+    For Child
+    - flex-basis: auto => Default Value | Make the ELements if there an Element has a Bigger Width than the other Elements put together in a good way until the width of the parent is low no Element is Bigger than the other
+    - flex-basis: {number[any css unit]} => Make the ELements if there an Element has a Bigger Width than the other Elements put together in a good way until the width of the parent is low no Element is Bigger than the other
+
+    The Diffrence between width and flex-basis is that flex-basis Deals with the width and with the height
+
+    - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 auto
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+}
