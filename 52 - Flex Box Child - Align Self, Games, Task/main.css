@@ -1,0 +1,31 @@
+/*  Flexible Box
+    For Child
+    - align-self: auto => Default Value | Make the Elememt Distributed like the Elements Next To it and these Elements their align-items is to Strech and Fill the Whole Content
+    - align-self: flex-start => Make the Elememt at the Start of the Content
+    - align-self: flex-end => Make the Elememt at the End of the Content
+    - align-self: center => Make the Elememt at the Center of the Content
+
+    I can go to the Parent and maek its align-items: flex-start; to make all Elements at the Start of the Content and go to any Element and make its align-self: stretch: and it will Fill the While Content or align-self: self-end; to Make this Elements at the End of the Content
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  background-color: #EEE;
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.flex div {
+  background-color: #F00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+}
