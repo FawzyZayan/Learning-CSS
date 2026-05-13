@@ -1,0 +1,16 @@
+/* 
+  Filters
+  - grayscale({Any Number}%) => Make the Photo Black and White
+  - blur([{Any Number} CSS Unit]) => Make the Blury
+  - invert({Any Number}%) => Change the Photo's Colors
+*/
+
+
+img {
+  transition: 0.3s;
+  filter: invert(100%);
+}
+
+img:hover {
+  filter: invert(0);
+}
