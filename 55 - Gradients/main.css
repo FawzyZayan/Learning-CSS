@@ -1,0 +1,42 @@
+/* 
+  Gradients
+  linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ...;)
+  Direction || Angle include to right, to left, to top, to bottom
+  0deg = to top
+  90deg = to right
+  180deg = to bottom
+  270deg = to left
+  360deg = 0deg
+  You can change the Opacity of any color you want
+  You can male any color take a specific space from the content by % or px
+*/
+
+div {
+  /* background-image: linear-gradient(to right, red, green, blue, yellow); */
+  width: 400px;
+  height: 200px;
+  background-color: #EEE;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    #2890b9 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80%);
+}
