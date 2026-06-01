@@ -1,0 +1,31 @@
+/*
+ Grid
+ Parent
+ - display: grid  | To start the grid
+ - grid-template-columns => [Number of Columns In] => [px, %, auto, fraction, repeat{number of columns, width of one column}, mix]
+ */
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
