@@ -1,0 +1,68 @@
+/*
+ Grid
+ Parent
+ - display: grid  | To start the grid
+ - grid-template-columns => [Number of Columns In] => [px, %, auto, fraction, repeat{number of columns, width of one column}, mix]
+ - grid-template-rows => [Number of Rows In] => [px, %, auto, fraction, repeat{number of columns, width of one column}, mix]
+ - columns-gap: {Any Number and any css Unit} => Make Spaces Between  Columns
+ - row-gap: {Any Number and any css Unit} => Make Spaces Between Rows
+ - gap: {Any Number and any css Unit} => Make Spaces Between Rows and Columns
+ */
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: 
+  "logo logo nav nav nav nav nav nav nav nav" 
+  "side side cont cont cont cont cont cont cont cont"
+  "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+  grid-area: logo;
+  background-color: #1E3D58;
+  color: white;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #057DCD;
+  color: white;
+}
+
+section {
+  grid-area: cont;
+  background-color: #FF7700;
+  color: white;
+}
+
+aside {
+  grid-area: side;
+  background-color: #CACFD2;
+  color: white;
+}
+
+footer {
+  grid-area: foot;
+  background-color: #5CC6E8;
+  color: white;
+}
