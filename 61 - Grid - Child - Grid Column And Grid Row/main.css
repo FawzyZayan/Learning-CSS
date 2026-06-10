@@ -1,0 +1,44 @@
+/*
+ Grid
+ Parent
+ - display: grid  | To start the grid
+ - grid-template-columns => [Number of Columns In] => [px, %, auto, fraction, repeat{number of columns, width of one column}, mix]
+ - grid-template-rows => [Number of Rows In] => [px, %, auto, fraction, repeat{number of columns, width of one column}, mix]
+ - columns-gap: {Any Number and any css Unit} => Make Spaces Between  Columns
+ - row-gap: {Any Number and any css Unit} => Make Spaces Between Rows
+ - gap: {Any Number and any css Unit} => Make Spaces Between Rows and Columns
+ Child
+ - grid-column => It's the abbreviation for grid-column-start and grid-column-end | You enter 2 numbers seperated by / if you entered 1 / 7 that means that the elemnt will take 6 columns only beecause the grid-column-end is exclusive or enter span and the number of columns you want the element to take. If you entered any number bigger than 1 like 2 in the grid-column-start there will be 1 column that is empty and there is no element in it this empty place is called an offset. If you entered any number in grid-column-start and a number more than the number of columns you have it will make the grid looks bad but if you entered span and a number more than the number of columns you have the element will go down and won't make the grid looks bad
+ - grid-row => It's the abbreviation for grid-row-start and grid-row-end | You enter 2 numbers seperated by / if you entered 1 / 7 that means that the elemnt will take 6 rows only beecause the grid-row-end is exclusive or enter span and the number of rows you want the element to take. If you entered any number bigger than 1 like 2 in the grid-row-start there will be 1 row that is empty and there is no element in it this empty place is called an offset. If you entered any number in grid-row-start and a number more than the number of rows you have it will make the grid looks bad but if you entered span and a number more than the number of rows you have the element will go down and won't make the grid looks bad
+ */
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px 10px;
+}
+
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.one {
+  grid-column: span 3;
+  grid-row: span 3;
+}
