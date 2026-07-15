@@ -1,0 +1,101 @@
+/* 
+  2D Transform
+  - Translate
+  translate: ({any number with any css unit to make the element move away from the y-axis}, {any number with any css unit to make the element move down to the x-axis}  *If you entered a negative number in the first parameter the element will move to the y-axis and if you entered a negative number in the second parameter the element will move away form the x-axis
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  overflow: hidden;
+  width: 720px;
+  height: 350px;
+}
+
+.image img {
+  transition: 0.5s;
+}
+
+.image:hover img{
+  transform: scale(1.3) rotate(5deg);
+  opacity: 0.6;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.shape {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #eee;
+  padding: 15px;
+  margin: 50px;
+}
+
+.shape div {
+  width: 100%;
+  height: 100%;
+  background: #f78888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.x-axis {
+  position: absolute;
+  bottom: -25px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: 2px;
+  background: #000;
+}
+
+.x-axis::after {
+  content: "X-Axis";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.y-axis {
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  width: 2px;
+  height: calc(100% + 30px);
+  background: #000;
+}
+
+.y-axis::after {
+  content: "Y-Axis";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
