@@ -1,0 +1,92 @@
+/* 
+  2D Transform
+  - Skew
+  skewX({Any number negative or positive}). It make the element a straight line horizontally at 90 deg and it returns normal at 180 deg, when it's between 0 and 90 or between 91 and 180 it has like a paralleogram shape. Positive begins from left and negative begins from right.
+
+  skewY({Any number negative or positive}). It make the element a straight line vartically at 90 deg and it returns normal at 180 deg, when it's between 0 and 90 or between 91 and 180 it has like a paralleogram shape. Positive begins from left to top and negative begins from right to top.
+
+  *** You can use turn too not only deg (90 deg = 0.25turn)(180 deg = 0.50 turn) ***
+
+  skew({any number negative or positive, any number negative or positive}). The shortcaut for  and skewY
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.shape {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #eee;
+  padding: 15px;
+  margin: 50px;
+}
+
+.shape div {
+  width: 100%;
+  height: 100%;
+  background: #f78888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.x-axis {
+  position: absolute;
+  bottom: -25px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: 2px;
+  background: #000;
+}
+
+.x-axis::after {
+  content: "X-Axis";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.y-axis {
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  width: 2px;
+  height: calc(100% + 30px);
+  background: #000;
+}
+
+.y-axis::after {
+  content: "Y-Axis";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  background: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
