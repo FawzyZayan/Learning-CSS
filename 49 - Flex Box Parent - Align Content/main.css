@@ -3,7 +3,7 @@
     - align-content: stretch => Default Value
     If we have some elemnts like in our project today and want them to be seperated from each other we'll use align-items
     align-items makea spaces betweent elements but align-content doesn't make space when you type flex-end, flex-start or center but it makes spaces when you type space-around, space-between or space-evenly.
-    stretch make the elements in the content stretch to fit in the content
+    stretch make the elements in the content stretch to fit in the content.
     */
 
 * {
