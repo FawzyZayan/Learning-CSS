@@ -1,0 +1,29 @@
+/* 
+  CSS Selectors
+  - * => Targets all thing in the page
+  - Element => [p, div, span, etc] Targets all p, div, span, etc
+  - Element Other Element => div p  Tragets all p in all div [Nesting]
+  - Class Name => Targets the element with the class ex: HTML code: (<div class="hi">Hi<div>). CSS code: (.hi {color: red;})
+  - Id Name => Targets the element with the Id ex: HTML code: (<div id="hi">Hi<div>). CSS code: (#hi {color: red;})
+  - .parent .child => Targets the child's class name inside the parent's class name
+  - .class-one.class-two => Targets one elements with two classes so you don't have to right the same code again
+  - .class-name div, class-name p => Targets all div inside the class-name or targets all p inside the class-name (Grouping)
+  - Element.class-name => Targets all element [p, div, span, etc] with the class-name
+  - .parent > .child => Direct Child | Targets the child which is down the parent directly it's not like .parent .child which targets the child class-name even if it's not the direct child
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
