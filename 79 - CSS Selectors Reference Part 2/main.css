@@ -1,0 +1,150 @@
+/* 
+  CSS Selectors
+
+  ================
+    = Part One =
+  ================
+
+  - * => Targets all thing in the page
+  - Element => [p, div, span, etc] Targets all p, div, span, etc
+  - Element Other Element => div p  Tragets all p in all div [Nesting]
+  - Class Name => Targets the element with the class ex: HTML code: (<div class="hi">Hi<div>). CSS code: (.hi {color: red;})
+  - Id Name => Targets the element with the Id ex: HTML code: (<div id="hi">Hi<div>). CSS code: (#hi {color: red;})
+  - .parent .child => Targets the child's class name inside the parent's class name
+  - .class-one.class-two => Targets one elements with two classes so you don't have to right the same code again
+  - .class-name div, class-name p => Targets all div inside the class-name or targets all p inside the class-name (Grouping)
+  - Element.class-name => Targets all element [p, div, span, etc] with the class-name
+  - .parent > .child => Direct Child | Targets the child which is down the parent directly it's not like .parent .child which targets the child class-name even if it's not the direct child
+
+  ================
+    = Part Two =
+  ================
+
+  - Element + Other Element => [div + p] Targets the p that comes directly after div without any element between them
+  - Element ~ Other Elements => [p ~ div] Targets ALL div that come dirctly after the FIRST p even though there is an element between them if there is a div in a section, span, etc it won't be targeted
+  - [Attribute] => Targets ANY element that has an attribute called title. Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+    CSS:
+      [title] {
+        color: red
+      }
+
+    This will make ALL the elements that have an attribute called title have red text color
+
+  - Element[Attribute] => Targets the specified element that has an attribute called title. Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+
+  CSS:
+    p[title] {
+      color: red
+    }
+
+    This will make the specified element that have an attribute called title have red text color
+
+  Note: (Attributes can have any name)
+
+  - [Attribute=Value]=> Targets ANY element that has an attribute its value="[what you type]". Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+    CSS:
+      [title=p] {
+        color: red
+      }
+
+    This will make ALL the elements that have an attribute its value="p" have red text color
+
+
+  - Element[Attribute=Value] = Targets the specified element that has an attribute its value="[what you type]". Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+
+  CSS:
+    p[title="p"] {
+      color: red
+    }
+
+    This will make the specified element that have an attribute its value="[what you type]" have red text color
+
+    Note: (Values of attributes can have any name)
+
+  - [Attribute~=Value] => (Contains a word) Targets an element that its attribute's value=[what you write]. Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+
+  CSS:
+    [title~="p"] {
+      color: red
+    }
+
+    This will make the ANY element that has the word you wrote in its attribute's value have red text color
+
+  - [Attribute*=Value] => (Contains a string) Targets an element that its attribute's value=[what you write]. Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+
+  CSS:
+    [title*="p"] {
+      color: red
+    }
+
+    This will make the ANY element that has the word you wrote in a string in its attribute's value have red text color
+
+    Note: (When a word is in a string it's like paragrah the p)
+
+  - [Attribute^=Value] => (Starts with a string) Targets an element that its attribute's value=[what you write....]. Ex:
+
+  HTML:
+    <p title="p">This is a test p<p>
+    <div title="div">This is a test div<div>
+    <span title="span">This is a test span<span>
+  
+
+  CSS:
+    [title^="p"] {
+      color: red
+    }
+
+    This will make the ANY element that has the word you wrote in a string and has a complement in its attribute's value have red text color
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
