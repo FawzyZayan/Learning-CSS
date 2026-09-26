@@ -1,5 +1,9 @@
 /* 
   CSS Selectors
+
+  ================
+    = Part One =
+  ================
   - * => Targets all thing in the page
   - Element => [p, div, span, etc] Targets all p, div, span, etc
   - Element Other Element => div p  Tragets all p in all div [Nesting]
