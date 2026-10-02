@@ -22,7 +22,7 @@
 
   - Element + Other Element => [div + p] Targets the p that comes directly after div without any element between them
   - Element ~ Other Elements => [p ~ div] Targets ALL div that come dirctly after the FIRST p even though there is an element between them if there is a div in a section, span, etc it won't be targeted
-  - [Attribute] => Targets ANY element that has an attribute called title. Ex:
+  - [Attribute] => Targets ANY element that has an attribute. Ex:
 
   HTML:
     <p title="p">This is a test p<p>
@@ -53,7 +53,7 @@
 
   Note: (Attributes can have any name)
 
-  - [Attribute=Value]=> Targets ANY element that has an attribute its value="[what you type]". Ex:
+  - [Attribute=Value] => Targets ANY element that has an attribute its value="[what you type]". Ex:
 
   HTML:
     <p title="p">This is a test p<p>
@@ -81,7 +81,7 @@
       color: red
     }
 
-    This will make the specified element that have an attribute its value="[what you type]" have red text color
+    This will make the specified element that have an attribute its value="[p]" have red text color
 
     Note: (Values of attributes can have any name)
 
@@ -94,7 +94,7 @@
   
 
   CSS:
-    [title~="p"] {
+    [title~="div"] {
       color: red
     }
 
@@ -109,7 +109,7 @@
   
 
   CSS:
-    [title*="p"] {
+    [title*="div"] {
       color: red
     }
 
@@ -126,7 +126,7 @@
   
 
   CSS:
-    [title^="p"] {
+    [title^="div"] {
       color: red
     }
 
