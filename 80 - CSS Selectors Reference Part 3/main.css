@@ -1,0 +1,36 @@
+/* 
+  CSS Selectors
+
+  ================
+    = Part Three =
+  ================
+
+  - element:first-child => If we have p and want the first element only has a red text color without class we can use this it should be the first child even if it is inside another element and has the specified element
+
+  - element:last-child => If we have p and want the last element only has a red text color without class we can use this it should be the last child even if it is inside another element and has the specified element
+
+  - element:first-of-type => If we want to make the first of type p in any element has a red text color, you will say easy we will use element:first-child WRONG! WHY? Because here we want to make the first element of that specific tag type. Ex: we have a div and a p inside a parent div. If we wrote p:first-child, nothing will be colored because the very first child is a div, not a p. But if we used p:first-of-type, it will be colored even if it has millions of div or span before it, because it looks for the first p, not just the first child overall
+
+
+  - element:last-of-type => If we want to make the last of type p in any element has a red text color, you will say easy we will use element:last-child WRONG! WHY? Because here we want to make the last element of that specific tag type. Ex: we have a p and a div inside a parent div. If we wrote p:last-child, nothing will be colored because the very last child is a div, not a p. But if we used p:last-of-type, it will be colored even if it has millions of div or span after it, because it looks for the last p, not just the last child overall
+
+  - element:only-child => Here we look for the specified element and it MUST be the only child to its parent even if it has another child but with another element
+
+  - element:only-of-type => This is EXACTLY element:only-child but the only different that is can has another childs with it but with another element
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
