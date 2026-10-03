@@ -1,0 +1,41 @@
+/* 
+  CSS Selectors
+
+  ================
+    = Part Four =
+  ================
+
+  - element:not(Selectors) => p:not(:first-child) {color: red} means don't make the color red to the first child and make all p have a red text color exept the first-child
+
+  - element:nth-child(n) => nth is the letters after the number like 1st 2nd 3rd 4th etc and it will take formatting
+
+  - element:nth-child(even) => Even numbers elements will take the formatting
+
+  - element:nth-child(odd) => Ood numbers elements will take the formatting
+
+  - element:nth-last-child(n) => EXACTLY element:nth-child(n) but it counts from the last to the beginning
+
+  - element:nth-last-child(even) => Even numbers elements will take the formatting but from counting from the last to the beginning
+
+  - element:nth-last-child(odd) => Odd numbers elements will take the formatting but from counting from the last to the beginning
+
+  - element:nth-of-type(n) => EXACTLY element:nth-child(n) but it jumps to the specific chosen element
+
+  [n = is the number]
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
