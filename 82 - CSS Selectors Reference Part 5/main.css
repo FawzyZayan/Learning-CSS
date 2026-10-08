@@ -1,0 +1,32 @@
+/* 
+  CSS Selectors
+
+  ================
+    = Part Five =
+  ================
+
+  - :root
+  - :checked [Great for checkbox make it checked without make it checked manually]
+  - :empty => Targets any element that has no thing inside it even if it is another element or text
+  - :disabled [Great for checkbox make the user unable tp wtite anything in it]
+  - :required [Great for checkbox the user must write something in it]
+  - :focus [Great for checkbox for example when writing you can make a border or anything]
+  - ::selection [Good when coping and pasting you can put a background color and when you select it the background color will appear]
+  - ::placeholder [Great for checkbox you can write anything in it so you can help the user know what they must write]
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
