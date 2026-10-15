@@ -1,0 +1,54 @@
+/* 
+  Media Queries
+  Responsive Design
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.parent div {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Mobile Screens */
+
+@media (max-width: 767px) {
+
+}
+
+/* Small Screens */
+
+@media (min-width: 768px){
+  .parent div {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .parent div {
+    width: calc(25% - 5px);
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+
+}
